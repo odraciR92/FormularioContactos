@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirmar_datos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.coursera.ricardoguzmanonate.formulariocontactos.ConfirmarDatos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvConfirmarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmarDatos"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/topFormulario"
+            android:textSize="@dimen/tituloFormulario"
+            android:textColor="@color/colorTitulo"/>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmarDatos"
+            android:layout_marginTop="@dimen/topFormulario"
+            android:textSize="@dimen/listaFormulario"
+            android:textColor="@color/colorTitulo"/>
+
+        <TextView
+            android:id="@+id/tvFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario"
+            android:text="@string/fechaNacimiento"
+            android:textSize="@dimen/listaFormulario"
+            android:textColor="@color/colorTitulo"/>
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario"
+            android:text="@string/telefono"
+            android:textSize="@dimen/listaFormulario"
+            android:textColor="@color/colorTitulo"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario"
+            android:text="@string/email"
+            android:textSize="@dimen/listaFormulario"
+            android:textColor="@color/colorTitulo"/>
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario"
+            android:text="@string/descripcionContacto"
+            android:textSize="@dimen/listaFormulario"
+            android:textColor="@color/colorTitulo"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/RaisedBtnTheme"
+        android:layout_alignParentBottom="true"
+        android:text="@string/editarDatos"
+        android:onClick="editarDatos"/>
+
+
+</RelativeLayout>

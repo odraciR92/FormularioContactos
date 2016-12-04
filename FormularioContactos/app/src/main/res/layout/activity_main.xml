@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.coursera.ricardoguzmanonate.formulariocontactos.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario">
+    
+            <EditText
+                android:id="@+id/etNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/nombreCompleto"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"/>
+        </android.support.design.widget.TextInputLayout>
+    
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario">
+    
+            <EditText
+                android:id="@+id/etFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/fechaNacimiento"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:onClick="pickFechaNacimiento"/>
+        </android.support.design.widget.TextInputLayout>
+    
+    
+    
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario">
+    
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/telefono"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"/>
+        </android.support.design.widget.TextInputLayout>
+    
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario">
+    
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"/>
+        </android.support.design.widget.TextInputLayout>
+    
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilDescripcionContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topFormulario">
+    
+            <EditText
+                android:id="@+id/etDescripcionContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/descripcionContacto"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/RaisedBtnTheme"
+        android:layout_alignParentBottom="true"
+        android:text="@string/siguiente"
+        android:onClick="siguienteDatos"/>
+</RelativeLayout>
